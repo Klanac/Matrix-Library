@@ -6,7 +6,7 @@ This library is available under the MIT license.
 
 # 📖 HOW TO USE
 ## IMPORTING LIBRARY
-var { mul, zbr, oduz, zbrBr, oduzBr, mulBr } = require('path');
+var { mul, zbr, oduz, zbrBr, oduzBr, mulBr, trans, det } = require('path');
 
 Paste the code at the beginning of the file in which you intend to use the functions. Instead of path, write where the main Matrix.js file is located.
 
