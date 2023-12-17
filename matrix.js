@@ -1,48 +1,146 @@
 export function mul(a, b){
-    var result = [];
-    var result_row = [];
-    
-    var sum = 0;
-    if(a[0].length === b.length){
-        for(let k = 0; k < a.length; k++){
-            for(let i = 0; i < b[0].length; i++){
-                for(let j = 0; j < b.length; j++){
-                    sum += a[k][j] * b[j][i];
+    if(Array.isArray(a) && Array.isArray(b)){
+        var result = [];
+        var result_row = [];
+        
+        var sum = 0;
+        if(a[0].length === b.length){
+            for(let k = 0; k < a.length; k++){
+                for(let i = 0; i < b[0].length; i++){
+                    for(let j = 0; j < b.length; j++){
+                        sum += a[k][j] * b[j][i];
+                    }
+                    result_row.push(sum);
+                    sum = 0;
                 }
-                result_row.push(sum);
-                sum = 0;
+                result.push(result_row);
+                result_row = [];
             }
-            result.push(result_row);
-            result_row = [];
+        } else {
+            return "Error occurred during multiplication!";
         }
-    } else {
-        return "Error occurred during multiplication!";
-    }
 
-    return result;
+        return result;
+    }else if(Array.isArray(a) && !Array.isArray(b) || !Array.isArray(a) && Array.isArray(b)){
+        if(Array.isArray(a)){
+            var matrix = a;
+            var number = b;
+        }else{
+            var matrix = b;
+            var number = a;
+        }
+    
+        for(let i = 0; i < matrix.length; i++){
+            for(let j = 0; j < matrix[0].length; j++){
+                matrix[i][j] *= number;
+            }
+        }
+        return matrix;
+    }else{
+        return a * b;
+    }
 }
 
 export function sum(a,b){
-    var result = [];
-    var result_row = [];
-    var sum = 0;
-    if(a[0].length === b[0].length && a.length === b.length) {
-        for(let i = 0; i < a.length; i++){
-            for(let j = 0; j < a[0].length; j++){
-                sum = a[i][j] + b[i][j];
-                result_row.push(sum);
+    if(Array.isArray(a) && Array.isArray(b)){
+        var result = [];
+        var result_row = [];
+        var sum = 0;
+        if(a[0].length === b[0].length && a.length === b.length) {
+            for(let i = 0; i < a.length; i++){
+                for(let j = 0; j < a[0].length; j++){
+                    sum = a[i][j] + b[i][j];
+                    result_row.push(sum);
+                }
+                result.push(result_row);
+                result_row = [];
+            }
+        }else{
+            return "Matrices cannot be summed!";
+        }
+
+        return result;
+    }else if(!Array.isArray(a) && Array.isArray(b) || Array.isArray(a) && !Array.isArray(b)){
+        if(Array.isArray(a)){
+            var matrix = a;
+            var number = b;
+        }else{
+            var matrix = b;
+            var number = a;
+        }
+        var result = [];
+        var result_row = [];
+        for(let i = 0; i < matrix.length; i++){
+            for(let j = 0; j < matrix[0].length; j++){
+                result_row.push(number);
             }
             result.push(result_row);
             result_row = [];
         }
-    }else{
-        return "Matrices cannot be summed!";
-    }
 
-    return result;
+        if(Array.isArray(a)){
+            b = result;
+        }else{
+            a = result;
+        }
+
+        var result = [];
+        var result_row = [];
+        var sum = 0;
+        if(a[0].length === b[0].length && a.length === b.length) {
+            for(let i = 0; i < a.length; i++){
+                for(let j = 0; j < a[0].length; j++){
+                    sum = a[i][j] + b[i][j];
+                    result_row.push(sum);
+                }
+                result.push(result_row);
+                result_row = [];
+            }
+        }else{
+            return "Matrices cannot be summed!";
+        }
+
+        return result;
+
+    }else{
+        return a+b;
+    }
 }
 
 export function sub(a,b){
+    if(Array.isArray(a) && Array.isArray(b)){
+        return subOrder(a,b);
+    }else if(!Array.isArray(a) && Array.isArray(b) || Array.isArray(a) && !Array.isArray(b)){
+        if(Array.isArray(a)){
+            var matrix = a;
+            var number = b;
+        }else{
+            var matrix = b;
+            var number = a;
+        }
+        var result = [];
+        var result_row = [];
+        for(let i = 0; i < matrix.length; i++){
+            for(let j = 0; j < matrix[0].length; j++){
+                result_row.push(number);
+            }
+            result.push(result_row);
+            result_row = [];
+        }
+
+        if(Array.isArray(a)){
+            b = result;
+        }else{
+            a = result;
+        }
+
+        return subOrder(a,b);
+    }else{
+        return a-b;
+    }
+}
+
+function subOrder(a,b){
     var result = [];
     var result_row = [];
     var sum = 0;
@@ -60,55 +158,6 @@ export function sub(a,b){
     }
 
     return result;
-}
-
-export function mulNum(number,matrix){
-    var result = matrix;
-    
-    for(let i = 0; i < result.length; i++){
-        for(let j = 0; j < result[0].length; j++){
-            result[i][j] *= number;
-        }
-    }
-    return result;
-}
-
-export function sumNum(number,matrix){
-    var a = [];
-    var c = number;
-    var b = matrix;
-    var result_row = [];
-    
-    for(let i = 0; i < matrix.length; i++){
-        for(let j = 0; j < matrix[0].length; j++){
-            result_row.push(c);
-        }
-        a.push(result_row);
-        result_row = [];
-    }
-
-    return sum(a,b);
-}
-
-export function subNum(number,matrix,order){
-    var a = [];
-    var c = number;
-    var b = matrix;
-    var result_row = [];
-    
-    for(let i = 0; i < matrix.length; i++){
-        for(let j = 0; j < matrix[0].length; j++){
-            result_row.push(c);
-        }
-        a.push(result_row);
-        result_row = [];
-    }
-
-    if(order === 0){
-        return sub(a,b);
-    }else if(order === 1){
-        return sub(b,a);
-    }
 }
 
 export function trans(matrix){
