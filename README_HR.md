@@ -32,5 +32,3 @@ Zalijepite kod na početak datoteke u kojoj namjeravate koristiti funkcije. Umje
 Sve funkcije vraćaju array u kojem svaki element predstavlja svoj red matrice, osim funkcije det(), koja vraća samo broj.
 
 # Hvala što koristite Matrix Library!
-
-# GG
