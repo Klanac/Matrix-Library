@@ -62,27 +62,15 @@ function sub(a,b){
     return result;
 }
 
-function mulNum(number,matrix,order){
-    var a = [];
-    var c = number;
-    var b = matrix;
-    var result_row = [];
+function mulNum(number,matrix){
+    var result = matrix;
     
-    for(let i = 0; i < matrix[0].length; i++){
-        for(let j = 0; j < matrix.length; j++){
-            result_row.push(c);
+    for(let i = 0; i < result.length; i++){
+        for(let j = 0; j < result[0].length; j++){
+            result[i][j] *= number;
         }
-        a.push(result_row);
-        result_row = [];
     }
-
-    if(order === 0){
-        return mul(a,b);
-    }else if(order === 1){
-        return mul(b,a);
-    }else{
-        return "Matrices cannot be multiplied in that order because they are not compatible with each other. Try changing the order or content of the matrices."
-    }
+    return result;
 }
 
 function sumNum(number,matrix){
