@@ -10,13 +10,13 @@ This library is available under the MIT license.
 
 ## IMPORTING LIBRARY
 
-var { mul, sum, sub, sumNum, subNum, mulNum, trans, det } = require('path');
+import { mul, sum, sub, sumNum, subNum, mulNum, trans, det } from "path";
 
 Paste the code at the beginning of the file in which you intend to use the functions. Instead of path, write where the main Matrix.js file is located.
 
 ## FUNCTIONS
 
-- **mul(a,b)** -> Multiply matrices in the order a * b.
+- **mul(a,b)** -> Multiply matrices in the order a \* b.
 - **sum(a,b)** -> Summing matrices a + b.
 - **sub(a,b)** -> Subtracts matrices a - b.
 - **mulNum(number,matrix)** -> Multiply a number with each element of the matrix.
