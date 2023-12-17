@@ -16,7 +16,7 @@ Zalijepite kod na početak datoteke u kojoj namjeravate koristiti funkcije. Umje
 
 ## FUNKCIJE
 
-- **mul(a,b)** -> Množi matrice redoslijedom a * b. (eng. multiplication)
+- **mul(a,b)** -> Množi matrice redoslijedom a \* b. (eng. multiplication)
 - **sum(a,b)** -> Zbraja matrice a + b. (eng. summing)
 - **sub(a,b)** -> Oduzima matrice a - b. (eng. subtraction)
 - **mulNum(number,matrix,order)** -> Množi broj sa svakim elementom matrice. (eng. **_mul_**tiplying a **_Num_**ber with matrix)
@@ -32,3 +32,5 @@ Zalijepite kod na početak datoteke u kojoj namjeravate koristiti funkcije. Umje
 Sve funkcije vraćaju array u kojem svaki element predstavlja svoj red matrice, osim funkcije det(), koja vraća samo broj.
 
 # Hvala što koristite Matrix Library!
+
+# GG
