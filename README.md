@@ -22,7 +22,7 @@ import { mul, sum, sub, trans, det } from "path";
 - **trans(matrix)** -> Transposes a matrix.
 - **det(matrix)** -> Determines the determinant of a matrix.
 
-# ❗**IMPORTNAT**❗
+# ❗**IMPORTANT**❗
 
 A and B can be arrays and matrices. So anything is possible. Depending on the input, the result can be either an array or a number.
 
