@@ -22,8 +22,8 @@ Paste the code at the beginning of the file in which you intend to use the funct
 - **mulNum(number,matrix)** -> Multiply a number with each element of the matrix.
 - **sumNum(number,matrix)** -> Converts a number to a matrix and adds to the matrix.
 - **subNum(number,matrix,order)** -> Converts a number to a matrix and subtracts it from the matrix. Order determines the order of subtraction.
-  - order = 0 -> A(number) \ B(matrix)
-  - order = 1 -> B(matrix) \ A(number)
+  - order = 0 -> A(number) / B(matrix)
+  - order = 1 -> B(matrix) / A(number)
 - **trans(matrix)** -> Transposes a matrix.
 - **det(matrix)** -> Determines the determinant of a matrix.
 
