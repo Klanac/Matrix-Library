@@ -25,6 +25,7 @@ import { mul, sum, sub, trans, det } from "path";
 # ❗**IMPORTNAT**❗
 
 A and B can be arrays and matrices. So anything is possible. Depending on the input, the result can be either an array or a number.
+
 For example, if both variables are a number, the result will be a number, but if at least one of the variables is an array, the result will be an array.
 
 # Thank you for using Matrix Library!
