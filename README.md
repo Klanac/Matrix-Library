@@ -16,7 +16,7 @@ Paste the code at the beginning of the file in which you intend to use the funct
 
 ## FUNCTIONS
 
-- **mul(a,b)** -> Multiply matrices in the order a \* b.
+- **mul(a,b)** -> Multiply matrices in the order a * b.
 - **sum(a,b)** -> Summing matrices a + b.
 - **sub(a,b)** -> Subtracts matrices a - b.
 - **mulNum(number,matrix)** -> Multiply a number with each element of the matrix.
