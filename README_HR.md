@@ -26,4 +26,6 @@ import { mul, sum, sub, trans, det } from "path";
 
 Varijable a i b mogu biti ili array ili broj. Ovisno o Vašim potrebama. Tako da je sve moguće. Ovisno o unosu, rezultat može biti niz ili broj.
 
+Naprimjer, ako su obje varijable broj, rezultat će biti broj, ali ako je barem jedna od varijabli array, rezultat će biti array.
+
 # Hvala što koristite Matrix Library!
