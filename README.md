@@ -16,9 +16,9 @@ import { mul, sum, sub, trans, det } from "path";
 
 ## FUNCTIONS
 
-- **mul(a,b)** -> Multiply matrices in the order a * b.
-- **sum(a,b)** -> Summing matrices or numbers a + b.
-- **sub(a,b)** -> Subtracts matrices or numbers a - b.
+- **mul(a,b)** -> Multiply matrices or numbers in the order a * b.
+- **sum(a,b)** -> Summing matrices or numbers in order a + b.
+- **sub(a,b)** -> Subtracts matrices or numbers in order a - b.
 - **trans(matrix)** -> Transposes a matrix.
 - **det(matrix)** -> Determines the determinant of a matrix.
 
