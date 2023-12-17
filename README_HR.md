@@ -12,7 +12,7 @@ Ovaj library je dostupan pod MIT licencom.
 
 import { mul, sum, sub, sumNum, subNum, mulNum, trans, det } from "path";
 
-Zalijepite kod na početak datoteke u kojoj namjeravate koristiti funkcije. Umjesto path napišite gdje se nalazi glavna datoteka matrix.js.
+**Preuzmite ZIP!** Zalijepite kod na početak datoteke u kojoj namjeravate koristiti funkcije. Umjesto path napišite gdje se nalazi glavna datoteka matrix.js.
 
 ## FUNKCIJE
 
