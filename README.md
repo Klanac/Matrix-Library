@@ -10,25 +10,20 @@ This library is available under the MIT license.
 
 ## IMPORTING LIBRARY
 
-import { mul, sum, sub, sumNum, subNum, mulNum, trans, det } from "path";
+import { mul, sum, sub, trans, det } from "path";
 
 **Download and extract ZIP!** Paste the code at the beginning of the file in which you intend to use the functions. Instead of path, write where the main matrix.js file is located.
 
 ## FUNCTIONS
 
 - **mul(a,b)** -> Multiply matrices in the order a * b.
-- **sum(a,b)** -> Summing matrices a + b.
-- **sub(a,b)** -> Subtracts matrices a - b.
-- **mulNum(number,matrix)** -> Multiply a number with each element of the matrix.
-- **sumNum(number,matrix)** -> Converts a number to a matrix and adds to the matrix.
-- **subNum(number,matrix,order)** -> Converts a number to a matrix and subtracts it from the matrix. Order determines the order of subtraction.
-  - order = 0 -> A(number) - B(matrix)
-  - order = 1 -> B(matrix) - A(number)
+- **sum(a,b)** -> Summing matrices or numbers a + b.
+- **sub(a,b)** -> Subtracts matrices or numbers a - b.
 - **trans(matrix)** -> Transposes a matrix.
 - **det(matrix)** -> Determines the determinant of a matrix.
 
 # ❗**IMPORTNAT**❗
 
-All functions return an array in which each element represents its row, except for the det() function, which returns only a number.
+A and B can be and arrays and matrices. Depends on result you will get in return, it can be array or number.
 
 # Thank you for using Matrix Library!
