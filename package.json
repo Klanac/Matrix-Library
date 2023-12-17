@@ -1,0 +1,12 @@
+{
+  "name": "matrix",
+  "version": "1.0.0",
+  "description": "The library was created for the purpose of web development for quick and easy calculations with matrices and numbers. The matrix is ​​capable of any operations, and the instructions describe in detail what each one does and how it works.",
+  "main": "matrix.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

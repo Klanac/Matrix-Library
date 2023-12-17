@@ -1,4 +1,4 @@
-function mul(a, b){
+export function mul(a, b){
     var result = [];
     var result_row = [];
     
@@ -22,7 +22,7 @@ function mul(a, b){
     return result;
 }
 
-function sum(a,b){
+export function sum(a,b){
     var result = [];
     var result_row = [];
     var sum = 0;
@@ -42,7 +42,7 @@ function sum(a,b){
     return result;
 }
 
-function sub(a,b){
+export function sub(a,b){
     var result = [];
     var result_row = [];
     var sum = 0;
@@ -62,7 +62,7 @@ function sub(a,b){
     return result;
 }
 
-function mulNum(number,matrix){
+export function mulNum(number,matrix){
     var result = matrix;
     
     for(let i = 0; i < result.length; i++){
@@ -73,7 +73,7 @@ function mulNum(number,matrix){
     return result;
 }
 
-function sumNum(number,matrix){
+export function sumNum(number,matrix){
     var a = [];
     var c = number;
     var b = matrix;
@@ -90,7 +90,7 @@ function sumNum(number,matrix){
     return sum(a,b);
 }
 
-function subNum(number,matrix,order){
+export function subNum(number,matrix,order){
     var a = [];
     var c = number;
     var b = matrix;
@@ -111,7 +111,7 @@ function subNum(number,matrix,order){
     }
 }
 
-function trans(matrix){
+export function trans(matrix){
     var result = [];
     var result_row = [];
 
@@ -126,7 +126,7 @@ function trans(matrix){
     return result;
 }
 
-function det(matrix) {
+export function det(matrix) {
 
     const rows = matrix.length;
 
@@ -158,5 +158,3 @@ function cofactor(matrix, row, column) {
 
     return character * det(submatrix);
 }
-
-module.exports = { mul, sum, sub, sumNum, subNum, mulNum, trans, det };
