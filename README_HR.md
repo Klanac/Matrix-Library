@@ -16,19 +16,14 @@ import { mul, sum, sub, trans, det } from "path";
 
 ## FUNKCIJE
 
-- **mul(a,b)** -> Množi matrice redoslijedom a * b. (eng. multiplication)
-- **sum(a,b)** -> Zbraja matrice a + b. (eng. summing)
-- **sub(a,b)** -> Oduzima matrice a - b. (eng. subtraction)
-- **mulNum(number,matrix)** -> Množi broj sa svakim elementom matrice. (eng. **_mul_**tiplying a **_Num_**ber with matrix)
-- **sumNum(number,matrix)** -> Pretvara broj u matricu istog reda i stupca kao i unesena matrica i zbraja ju unesenoj matrici. (eng. **_sum_**ming a **_Num_**ber with matrix)
-- **subNum(number,matrix,order)** -> Pretvara broj u matricu i oduzima ga od matrice. Varijabla order (hrv. redoslijed) određuje redoslijed množenja. (eng. **_sub_**tracting a **_Num_**ber with matrix)
-  - order = 0 -> A(broj) - B(matrica)
-  - order = 1 -> B(matrica) - A(broj)
+- **mul(a,b)** -> Množi matrice ili brojeve redoslijedom a * b. (eng. multiplication)
+- **sum(a,b)** -> Zbraja matrice ili brojeve redoslijedom a + b. (eng. summing)
+- **sub(a,b)** -> Oduzima matrice ili brojeve redoslijedom a - b. (eng. subtraction)
 - **trans(matrix)** -> Transponira matricu. (eng. transpose)
 - **det(matrix)** -> Određuje determinantu matrice. (eng. determinant)
 
 # ❗**VAŽNO**❗
 
-Sve funkcije vraćaju array u kojem svaki element predstavlja svoj red matrice, osim funkcije det(), koja vraća samo broj.
+Varijable a i b mogu biti ili array ili broj. Ovisno o Vašim potrebama. Tako da je sve moguće. Ovisno o unosu, rezultat može biti niz ili broj.
 
 # Hvala što koristite Matrix Library!
